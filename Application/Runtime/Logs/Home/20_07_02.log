@@ -1,0 +1,1096 @@
+[ 2020-07-02T01:06:55+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0932s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2020-07-02T01:08:42+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2020-07-02T01:11:29+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0772s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2020-07-02T01:11:40+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2020-07-02T01:11:47+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:11:47+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:20:00+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2020-07-02T01:20:00+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002767s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:20:00+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008565s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:20:26+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0579s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2020-07-02T01:20:26+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:20:26+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:21:02+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2020-07-02T01:21:02+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:21:02+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:18+08:00 ] ::1 /blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2020-07-02T01:23:18+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:18+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003060s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:23+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0103s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId SET `hits`=hits+1 WHERE Article.articleId = '2' [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2020-07-02T01:23:24+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003997s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:24+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002428s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:32+08:00 ] ::1 /blog/Home/Index/comment?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0074s ]
+SQL: INSERT INTO `blog_comment` (`nickname`,`content`,`createAt`,`createIp`,`articleId`) VALUES ('武林风','六年金饭碗','1593624212','0.0.0.0','2') [ RunTime:0.0004s ]
+
+[ 2020-07-02T01:23:45+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2020-07-02T01:23:45+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005143s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:45+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:54+08:00 ] ::1 /blog/index/category/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `blog_category` WHERE `categoryId` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createdAt E:\PHPstudy\WWW\blog\Application\Runtime\Cache\Home\d9c3fe725e8a3807a83c0451c141ea99.php 第 58 行.
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2020-07-02T01:23:54+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:23:54+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:24:16+08:00 ] ::1 /blog/index/article/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0066s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '1' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+
+[ 2020-07-02T01:25:16+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0111s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.388418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.388468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2020-07-02T01:25:16+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010490s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:25:16+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:25:31+08:00 ] ::1 /blog/Home/Index/comment?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0940s ]
+SQL: INSERT INTO `blog_comment` (`nickname`,`content`,`createAt`,`createIp`,`articleId`) VALUES ('打卡机都不卡','暗地里前往加拿大抛弃我','1593624331','0.0.0.0','2') [ RunTime:0.0003s ]
+
+[ 2020-07-02T01:25:49+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0830s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.841155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.841207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2020-07-02T01:25:49+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T01:25:49+08:00 ] ::1 /blog/public/vendor/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-07-02T03:20:15+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.1053s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0121s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId SET `hits`=hits+1 WHERE Article.articleId = '2' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2020-07-02T03:20:34+08:00 ] ::1 /blog/Home/Index/comment?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0197s ]
+SQL: INSERT INTO `blog_comment` (`nickname`,`content`,`createAt`,`createIp`,`articleId`) VALUES ('hi波i','还不v哦那里面','1593631234','0.0.0.0','2') [ RunTime:0.0003s ]
+
+[ 2020-07-02T03:20:51+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003336s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2020-07-02T03:21:06+08:00 ] ::1 /blog/index/category/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_category` WHERE `categoryId` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '2' ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.1349s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2020-07-02T03:21:12+08:00 ] ::1 /blog/index/category/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003777s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `blog_category` WHERE `categoryId` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: createdAt E:\PHPstudy\WWW\blog\Application\Runtime\Cache\Home\d9c3fe725e8a3807a83c0451c141ea99.php 第 58 行.
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001950s ]
+
+[ 2020-07-02T03:24:02+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0079s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2020-07-02T03:29:06+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2020-07-02T03:29:37+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0276s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0122s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001670s ]
+
+[ 2020-07-02T03:30:46+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0127s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId SET `hits`=hits+1 WHERE Article.articleId = '2' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002860s ]
+
+[ 2020-07-02T03:31:04+08:00 ] ::1 /blog/Home/Index/comment?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0072s ]
+SQL: INSERT INTO `blog_comment` (`nickname`,`content`,`createAt`,`createIp`,`articleId`) VALUES ('同一天回复','过的规范化广泛','1593631864','0.0.0.0','2') [ RunTime:0.0003s ]
+
+[ 2020-07-02T03:31:15+08:00 ] ::1 /blog/index/category/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007630s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `blog_category` WHERE `categoryId` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: createdAt E:\PHPstudy\WWW\blog\Application\Runtime\Cache\Home\d9c3fe725e8a3807a83c0451c141ea99.php 第 58 行.
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2020-07-02T03:33:41+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002087s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0935s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.1522s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2020-07-02T03:34:36+08:00 ] ::1 /blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0944s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0583s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2020-07-02T03:35:05+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0079s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003144s ]
+
+[ 2020-07-02T03:35:28+08:00 ] ::1 /blog/Home/Index/comment?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `blog_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0073s ]
+SQL: INSERT INTO `blog_comment` (`nickname`,`content`,`createAt`,`createIp`,`articleId`) VALUES ('返回给','程序许昌','1593632128','0.0.0.0','2') [ RunTime:0.0005s ]
+
+[ 2020-07-02T03:35:39+08:00 ] ::1 /blog/index/category/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002565s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `blog_category` WHERE `categoryId` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.status = 1 AND Category.categoryId = '1' ORDER BY Article.sort DESC,Article.articleId DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: createdAt E:\PHPstudy\WWW\blog\Application\Runtime\Cache\Home\d9c3fe725e8a3807a83c0451c141ea99.php 第 58 行.
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2020-07-02T03:38:08+08:00 ] ::1 /blog/index/article/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0064s ]
+SQL: SELECT Article.articleId AS articleId,Article.title AS title,Article.description AS description,Article.image AS image,Article.hits AS hits,Article.createAt AS createAt,Article.updateAt AS updateAt,Article.status AS status,Article.sort AS sort,Article.content AS content,Category.categoryId AS categoryId,Category.name AS name FROM blog_article Article  JOIN blog_category Category ON Article.categoryId=Category.categoryId WHERE Article.articleId = '2' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `blog_comment` WHERE `articleId` = 2 ORDER BY commentId DESC LIMIT 30   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `blog_category` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `blog_link` WHERE `status` = 1 ORDER BY linkId DESC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
